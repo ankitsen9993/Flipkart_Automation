@@ -71,7 +71,7 @@ public class FripkartAutomate {
 
         // 9. Check Add to Cart
         try {
-            WebElement addToCart = driver.findElement(By.xpath("//button[contains(text(),'Add to cart')]"));
+            WebElement addToCart = driver.findElement(By.xpath("//div[contains(@class,'grid-formation grid-column-2')][1]"));
 
             if (addToCart.isDisplayed()) {
 
